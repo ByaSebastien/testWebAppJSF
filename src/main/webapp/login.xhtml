@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:jsf="http://xmlns.jcp.org/jsf">
+<f:view>
+    <head>
+        <title>Login screen</title>
+        <link rel="stylesheet" type="text/css" href="styles/style.css"/>
+    </head>
+    <body>
+    <h1>Login screen</h1>
+
+    <h:form>
+
+        <h:outputLabel for="login">Login : </h:outputLabel>
+        <input type="text"
+               jsf:id="login" jsf:value="#{loginBean.login}"
+               jsf:required="true" jsf:requiredMessage="La saisie du login est obligatoire !" />
+        <h:message for="login" styleClass="errorBlock" />
+        <br/>
+
+<!--        <h:outputLabel for="email">Email : </h:outputLabel>-->
+<!--        <input type="text"-->
+<!--               jsf:id="email" jsf:value="#{loginBean.email}"-->
+<!--               jsf:required="true" jsf:requiredMessage="L'email est obligatoire"/>-->
+<!--        <h:message for="email" styleClass="errorBlock"/>-->
+<!--        <br/>-->
+
+        <h:outputLabel for="password">Password : </h:outputLabel>
+        <input type="password"
+               jsf:id="password" jsf:value="#{loginBean.password}"
+               jsf:required="true" jsf:requiredMessage="La saisie du mot de passe est obligatoire !" />
+        <h:message for="password" styleClass="errorBlock" />
+        <br/>
+
+        <h:commandButton action="#{loginBean.returnAction}" value="Connect"/>
+
+    </h:form>
+    </body>
+</f:view>
+</html>

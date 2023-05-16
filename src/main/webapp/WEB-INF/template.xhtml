@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+
+<f:view>
+    <h:head>
+        <meta charset="UTF-8"/>
+        <link rel="stylesheet" type="text/css"
+              href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"/>
+        <title><ui:insert name="title">The page title</ui:insert></title>
+    </h:head>
+    <body>
+        <header class="jumbotron text-center">
+            <div class="container">
+                <div class="row">
+                    <a href="faces/index.xhtml" class="col-md-2">
+                        <img src="images/logo.png" alt="Site logo" title="Retour à la page principale"/>
+                    </a>
+                    <h1 class="col-md-10 text-center">
+                        <ui:insert name="title">The page title</ui:insert>
+                    </h1>
+                </div>
+            </div>
+        </header>
+
+
+        <div class="container">
+            <div class="row">
+                <nav class="navbar col-md-12" style="margin-bottom: 30px;">
+                    <a href="index.xhtml">Accueil</a>
+                    <a href="product1.xhtml">Produit 1</a>
+                    <a href="product2.xhtml">Produit 2</a>
+                    <a href="product3.xhtml">Produit 3</a>
+                    <a href="contact.xhtml">Contact</a>
+                </nav>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <ui:insert name="aSide">Side content</ui:insert>
+                </div>
+                <div class="col-md-8">
+                    <ui:insert name="content">Main Content</ui:insert>
+                </div>
+            </div>
+        </div>
+
+        <br/><br/>
+
+        <footer class="jumbotron text-center">
+            <h2 style="margin-bottom: 20px;">
+                Ici, nous avons un pied de page<br/>avec des liens quelconques.
+            </h2>
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <a href="#">Link 1</a><br/>
+                        <a href="#">Link 2</a><br/>
+                        <a href="#">Link 3</a>
+                    </div>
+                    <div class="col-md-4">
+                        <a href="#">Link 4</a><br/>
+                        <a href="#">Link 5</a><br/>
+                        <a href="#">Link 6</a>
+                    </div>
+                    <div class="col-md-4">
+                        <a href="#">Link 7</a><br/>
+                        <a href="#">Link 8</a><br/>
+                        <a href="#">Link 9</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </body>
+</f:view>
+</html>

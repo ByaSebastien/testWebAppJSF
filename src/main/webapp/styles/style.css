@@ -1,0 +1,22 @@
+.errorBlock{
+    color: red;
+}
+.dataTable {
+    border: 1px solid black;
+    border-spacing : 1px;
+    border-collapse : collapse;
+    margin: auto;
+    width: 60%;
+}
+
+.dataTable thead {
+    background: #888a85;
+}
+
+.dataTable .even {
+    background: #eeeeec;
+}
+
+.dataTable .odd {
+    background: #d3d7cf;
+}
